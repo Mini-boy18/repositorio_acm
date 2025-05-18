@@ -11,13 +11,13 @@
   <!--header-->
   <header class="main-header clearfix" role="header">
     <div class="logo">
-      <a href="#"><em>Grad</em> School</a>
+      <a href="#"><em>R-</em> ACM</a>
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
-        <li><a href="#section1">Home</a></li>
-        <li class="has-submenu"><a href="#section2">About Us</a>
+        <li><a href="#section1">Inicial</a></li>
+        <li class="has-submenu"><a href="#section2">Sobre nós</a>
           <ul class="sub-menu">
             <li><a href="#section2">Who we are?</a></li>
             <li><a href="#section3">What we do?</a></li>
@@ -25,9 +25,9 @@
             <li><a href="https://templatemo.com/about" rel="sponsored" class="external">External URL</a></li>
           </ul>
         </li>
-        <li><a href="#section4">Courses</a></li>
+        <li><a href="#section4">Cursos</a></li>
         <!-- <li><a href="#section5">Video</a></li> -->
-        <li><a href="#section6">Contact</a></li>
+        <li><a href="#section6">Contactos</a></li>
         <li><a href="https://templatemo.com" class="external">External</a></li>
       </ul>
     </nav>
@@ -42,9 +42,9 @@
       <div class="video-overlay header-text">
           <div class="caption">
               <h6>Graduate School of Management</h6>
-              <h2><em>Your</em> Classroom</h2>
+              <h2><em>Sua</em> Sala De Aulas</h2>
               <div class="main-button">
-                  <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+                  <div class="scroll-to-section"><a href="#section2">Descubra Mais</a></div>
               </div>
           </div>
       </div>
