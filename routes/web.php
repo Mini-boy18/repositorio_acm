@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\DashboardController;
 
+<<<<<<< Updated upstream
 // Force redirect to login
 Route::redirect('/', '/login');
 
@@ -22,8 +22,29 @@ Route::middleware('auth')->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     
     // Admin Routes
+=======
+// Redirecionamento raiz
+Route::redirect('/', '/entrar');
+
+// Rotas de autenticação
+Route::middleware('guest')->group(function () {
+    Route::get('/entrar', [AuthController::class, 'mostrarFormularioLogin'])->name('entrar');
+    Route::post('/entrar', [AuthController::class, 'login']);
+    Route::get('/registro', [AuthController::class, 'mostrarFormularioRegistro'])->name('registro');
+    Route::post('/registro', [AuthController::class, 'registro']);
+});
+
+Route::post('/sair', [AuthController::class, 'logout'])->name('sair');
+
+// Rotas protegidas
+Route::middleware('auth')->group(function () {
+    Route::get('/inicio', function () {
+        return view('inicio');
+    })->name('inicio');
+    
+    // Rotas de administração
+>>>>>>> Stashed changes
     Route::middleware('admin')->prefix('admin')->group(function () {
-        Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
-        // Add other admin routes here
+        Route::get('/painel', [DashboardController::class, 'index'])->name('admin.painel');
     });
 });

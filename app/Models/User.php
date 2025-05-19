@@ -24,4 +24,20 @@ class User extends Authenticatable
     protected $casts = [
         'is_admin' => 'boolean',
     ];
+
+    // Portuguese accessor methods
+    public function getNomeAttribute()
+    {
+        return $this->name;
+    }
+
+    public function getSenhaAttribute()
+    {
+        return $this->password;
+    }
+
+    public function getAdministradorAttribute()
+    {
+        return $this->is_admin;
+    }
 }
