@@ -1,17 +1,29 @@
 <?php
-use App\Http\Controllers\UsuarioController;
-use App\Http\Controllers\AreaController;
-use App\Http\Controllers\ConteudoController;
-use App\Http\Controllers\AvaliacaoController;
-use App\Http\Controllers\RelatorioController;
+
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Admin\DashboardController;
 
-Route::resource('usuarios', UsuarioController::class);
-Route::resource('areas', AreaController::class);
-Route::resource('conteudos', ConteudosController::class);
-Route::resource('avaliacoes', AvaliacoesController::class);
+// Force redirect to login
+Route::redirect('/', '/login');
 
-Route::get('/relatorios/acessos', [RelatorioController::class, 'index'])->name('relatorios.index');
-Route::get('/', function () {
-    return view('home');
+// Authentication Routes
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+// Registration Routes
+Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
+Route::post('/register', [AuthController::class, 'register']);
+
+// Protected Routes
+Route::middleware('auth')->group(function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+    
+    // Admin Routes
+    Route::middleware('admin')->prefix('admin')->group(function () {
+        Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+        // Add other admin routes here
+    });
 });

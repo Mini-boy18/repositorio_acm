@@ -59,7 +59,7 @@
           <div class="features-post">
             <div class="features-content">
               <div class="content-show">
-                <h4><i class="fa fa-pencil"></i>All Courses</h4>
+                <h4><i class="fa fa-pencil"></i>Todos os cursos</h4>
               </div>
               <div class="content-hide">
                 <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
@@ -73,7 +73,7 @@
           <div class="features-post second-features">
             <div class="features-content">
               <div class="content-show">
-                <h4><i class="fa fa-book"></i>Virtual Class</h4>
+                <h4><i class="fa fa-book"></i>Escola virtual</h4>
               </div>
               <div class="content-hide">
                 <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
@@ -87,7 +87,7 @@
           <div class="features-post third-features">
             <div class="features-content">
               <div class="content-show">
-                <h4><i class="fa fa-book"></i>Real Meeting</h4>
+                <h4><i class="fa fa-book"></i>Sala de aulas</h4>
               </div>
               <div class="content-hide">
                 <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
@@ -106,15 +106,15 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>Why choose Grad School?</h2>
+            <h2>Porque nos escolher?</h2>
           </div>
         </div>
         <div class="col-md-12">
           <div id='tabs'>
             <ul>
-              <li><a href='#tabs-1'>Best Education</a></li>
-              <li><a href='#tabs-2'>Top Management</a></li>
-              <li><a href='#tabs-3'>Quality Meeting</a></li>
+              <li><a href='#tabs-1'>Melhor Educação</a></li>
+              <li><a href='#tabs-2'>Melhor Manejamento</a></li>
+              <li><a href='#tabs-3'>Qualidade Nas passagens de aulas/a></li>
             </ul>
             <section class='tabs-content'>
               <article id='tabs-1'>
@@ -123,7 +123,7 @@
                     <img src="assets/images/choose-us-image-01.png" alt="">
                   </div>
                   <div class="col-md-6">
-                    <h4>Best Education</h4>
+                    <h4>Melhor Educação</h4>
                     <p>Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. You may want to make <a href="https://paypal.me/templatemo" target="_parent" rel="sponsored">a little donation</a> to TemplateMo. Please tell your friends about us. Thank you.</p>
                   </div>
                 </div>
@@ -134,7 +134,7 @@
                     <img src="assets/images/choose-us-image-02.png" alt="">
                   </div>
                   <div class="col-md-6">
-                    <h4>Top Level</h4>
+                    <h4>Grande Nível</h4>
                     <p>You can modify this HTML layout by editing contents and adding more pages as you needed. Since this template has options to add dropdown menus, you can put many HTML pages.</p> 
                     <p>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
                   </div>

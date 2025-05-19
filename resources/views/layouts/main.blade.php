@@ -34,23 +34,23 @@ https://templatemo.com/tm-557-grad-school
   <!--header-->
   <header class="main-header clearfix" role="header">
     <div class="logo">
-      <a href="#"><em>Grad</em> School</a>
+      <a href="#"><em>R-</em>ACM</a>
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
-        <li><a href="#section1">Home</a></li>
-        <li class="has-submenu"><a href="#section2">About Us</a>
+        <li><a href="#section1">Inicial</a></li>
+        <li class="has-submenu"><a href="#section2">Sobre Nós</a>
           <ul class="sub-menu">
-            <li><a href="#section2">Who we are?</a></li>
-            <li><a href="#section3">What we do?</a></li>
-            <li><a href="#section3">How it works?</a></li>
+            <li><a href="#section2">Quem somos nós?</a></li>
+            <li><a href="#section3">O que fazemos?</a></li>
+            <li><a href="#section3">Como funciona?</a></li>
             <li><a href="https://templatemo.com/about" rel="sponsored" class="external">External URL</a></li>
           </ul>
         </li>
-        <li><a href="#section4">Courses</a></li>
+        <li><a href="#section4">Cursos</a></li>
         <!-- <li><a href="#section5">Video</a></li> -->
-        <li><a href="#section6">Contact</a></li>
+        <li><a href="#section6">Contactos</a></li>
         <li><a href="https://templatemo.com" class="external">External</a></li>
       </ul>
     </nav>
@@ -64,10 +64,10 @@ https://templatemo.com/tm-557-grad-school
 
       <div class="video-overlay header-text">
           <div class="caption">
-              <h6>Graduate School of Management</h6>
-              <h2><em>Your</em> Classroom</h2>
+              <h6>Venha Adquerir Conhecimento connosco</h6>
+              <h2><em>Sua</em> Sala De Aulas</h2>
               <div class="main-button">
-                  <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+                  <div class="scroll-to-section"><a href="#section2">Descubra mais</a></div>
               </div>
           </div>
       </div>
@@ -82,7 +82,7 @@ https://templatemo.com/tm-557-grad-school
           <div class="features-post">
             <div class="features-content">
               <div class="content-show">
-                <h4><i class="fa fa-pencil"></i>All Courses</h4>
+                <h4><i class="fa fa-pencil"></i>Todos Os Cursos</h4>
               </div>
               <div class="content-hide">
                 <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
@@ -129,7 +129,7 @@ https://templatemo.com/tm-557-grad-school
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>Why choose Grad School?</h2>
+            <h2>Porque nos escolher?</h2>
           </div>
         </div>
         <div class="col-md-12">
@@ -181,93 +181,27 @@ https://templatemo.com/tm-557-grad-school
     </div>
   </section>
 
-  <section class="section coming-soon" data-section="section3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7 col-xs-12">
-          <div class="continer centerIt">
-            <div>
-              <h4>Take <em>any online course</em> and win $326 for your next class</h4>
-              <div class="counter">
-
-                <div class="days">
-                  <div class="value">00</div>
-                  <span>Days</span>
-                </div>
-
-                <div class="hours">
-                  <div class="value">00</div>
-                  <span>Hours</span>
-                </div>
-
-                <div class="minutes">
-                  <div class="value">00</div>
-                  <span>Minutes</span>
-                </div>
-
-                <div class="seconds">
-                  <div class="value">00</div>
-                  <span>Seconds</span>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="right-content">
-            <div class="top-content">
-              <h6>Register your free account and <em>get immediate</em> access to online courses</h6>
-            </div>
-            <form id="contact" action="" method="get">
-              <div class="row">
-                <div class="col-md-12">
-                  <fieldset>
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <button type="submit" id="form-submit" class="button">Get it now</button>
-                  </fieldset>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <section class="section courses" data-section="section4">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>Choose Your Course</h2>
+            <h2>Escolha o seu curso</h2>
           </div>
         </div>
         <div class="owl-carousel owl-theme">
           <div class="item">
             <img src="assets/images/courses-01.jpg" alt="Course #1">
             <div class="down-content">
-              <h4>Digital Marketing</h4>
+              <h4>Curso de HTML</h4>
               <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
               <div class="author-image">
                 <img src="assets/images/author-01.png" alt="Author 1">
               </div>
               <div class="text-button-pay">
-                <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
+                <a href="/resources/views/layouts/html_curso.php">Ver<i class="fa fa-angle-double-right"></i></a>
               </div>
             </div>
           </div>
