@@ -4,67 +4,77 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use App\Models\User;
+use Illuminate\Validation\Rules;
 
 class AuthController extends Controller
 {
-    // Show login form (always redirect here first)
     public function showLoginForm()
     {
+        if (Auth::check()) {
+            return $this->redirectAuthenticatedUser();
+        }
         return view('auth.login');
     }
 
-    // Handle login
     public function login(Request $request)
     {
-        $credentials = $request->validate([
-            'email' => 'required|email',
-            'password' => 'required'
+        $request->validate([
+            'email' => 'required|string|email',
+            'password' => 'required|string',
         ]);
 
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($request->only('email', 'password'), $request->filled('remember'))) {
             $request->session()->regenerate();
-            
-            return Auth::user()->is_admin 
-                ? redirect()->route('admin.dashboard')
-                : redirect()->route('home');
+            return $this->redirectAuthenticatedUser();
         }
 
-        return back()->withErrors(['email' => 'Credenciais inválidas']);
+        return back()->withErrors([
+            'email' => 'Credenciais inválidas.',
+        ])->onlyInput('email');
     }
 
-    // Show registration form (only for regular users)
     public function showRegistrationForm()
     {
+        if (Auth::check()) {
+            return $this->redirectAuthenticatedUser();
+        }
         return view('auth.register');
     }
 
-    // Handle registration (only creates regular users)
     public function register(Request $request)
     {
-        $validated = $request->validate([
+        $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:8|confirmed',
+            'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
-        User::create([
-            'name' => $validated['name'],
-            'email' => $validated['email'],
-            'password' => Hash::make($validated['password']),
-            'is_admin' => false
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'is_admin' => false,
         ]);
 
-        return redirect()->route('login')->with('success', 'Conta criada! Faça login.');
+        Auth::login($user);
+
+        return $this->redirectAuthenticatedUser();
     }
 
-    // Handle logout
     public function logout(Request $request)
     {
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
         return redirect('/login');
+    }
+
+    protected function redirectAuthenticatedUser()
+    {
+        return redirect()->intended(
+            auth()->user()->is_admin ? route('admin.dashboard') : route('home')
+        );
     }
 }

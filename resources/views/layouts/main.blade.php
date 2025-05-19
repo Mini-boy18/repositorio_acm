@@ -196,12 +196,12 @@ https://templatemo.com/tm-557-grad-school
             <img src="assets/images/courses-01.jpg" alt="Course #1">
             <div class="down-content">
               <h4>Curso de HTML</h4>
-              <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
+              <p>mini boy e macaco</p>
               <div class="author-image">
                 <img src="assets/images/author-01.png" alt="Author 1">
               </div>
               <div class="text-button-pay">
-                <a href="/resources/views/layouts/html_curso.php">Ver<i class="fa fa-angle-double-right"></i></a>
+                <a href="{{route('curso1.html')}}">Ver<i class="fa fa-angle-double-right"></i></a>
               </div>
             </div>
           </div>
